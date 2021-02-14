@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- TODO: Put your HTML code in here -->
+  <div class="container">
+    <div class="card p-3 text-center">
+      <h4><em>weather</em></h4>
+      <form>
+        <div class="form-group d-flex">
+         <!--  comment here when using geolocation -->
+           <input type="text" class="form-control" id="input-address" placeholder="city name">
+          <!-- <select id="city-input" class="select2 py-2"></select> -->
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary w-100">Get the weather</button>
+
+        <!-- uncomment here when using geolocation -->
+        <!-- <button type="submit" id="geoWeather" class="btn btn-primary w-100">Push me and get the weather</button> -->
+      </form>
+      <div id="weather"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
